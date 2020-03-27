@@ -1,0 +1,77 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+**/.idea/**/workspace.xml
+**/.idea/**/tasks.xml
+**/.idea/shelf/*
+**/.idea/dictionaries
+
+# Sensitive or high-churn files
+.idea/
+**/.idea/**/dataSources/
+**/.idea/**/dataSources.ids
+**/.idea/**/dataSources.xml
+**/.idea/**/dataSources.local.xml
+**/.idea/**/sqlDataSources.xml
+**/.idea/**/dynamic.xml
+/.idea/*.*
+
+# Rider
+
+# Rider auto-generates .iml files, and contentModel.xml
+**/.idea/**/*.iml
+**/.idea/**/contentModel.xml
+**/.idea/**/modules.xml
+
+# compiled output
+/dist
+/dist-server
+/tmp
+/out-tsc
+
+# dependencies
+/node_modules
+
+*.swp
+*.*~
+project.lock.json
+.DS_Store
+*.pyc
+
+# Visual Studio Code
+.vscode
+
+# User-specific files
+Desktop.ini
+.DS_Store
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.dbmdl
+*.jfm
+Thumbs.db
+.vs/
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+[Oo]bj/*.*
+_UpgradeReport_Files/
+[Pp]ackages/
+msbuild.log
+msbuild.err
+msbuild.wrn
+[Oo]bj/*.*
+/src/**/**/node_modules
+
+# Test Coverage
+Coverage.json
+coverage.cobertura.xml

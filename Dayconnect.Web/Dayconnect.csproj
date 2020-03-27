@@ -7,18 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="3.11.0" />
     <PackageReference Include="nunit" Version="3.12.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.16.1"><IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 <PrivateAssets>all</PrivateAssets>
 </PackageReference>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
     <PackageReference Include="DotNetSeleniumExtras.PageObjects.Core" Version="3.12.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Cenarios\" />
-    <Folder Include="Cenarios\Web\" />
-    <Folder Include="Cenarios\Web\Models\" />
+    <PackageReference Include="Selenium.Firefox.WebDriver" Version="0.26.0" />
+    <PackageReference Include="Selenium.Support" Version="3.141.0" />
+    <PackageReference Include="Selenium.WebDriver" Version="3.141.0" />
+    <PackageReference Include="Tesseract" Version="3.3.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Daycoval.Selenium.Framework\Daycoval.Selenium.Framework.csproj" />
