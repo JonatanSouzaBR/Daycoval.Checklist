@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dayconnect", "Dayconnect.Web\Dayconnect.csproj", "{DF494A4A-2AF7-45B4-8A35-2C734938190E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Daycoval.Selenium.Framework", "Daycoval.Selenium.Framework\Daycoval.Selenium.Framework.csproj", "{CBBE7014-D607-47AD-9E64-45FABDA46029}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF494A4A-2AF7-45B4-8A35-2C734938190E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF494A4A-2AF7-45B4-8A35-2C734938190E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF494A4A-2AF7-45B4-8A35-2C734938190E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF494A4A-2AF7-45B4-8A35-2C734938190E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBBE7014-D607-47AD-9E64-45FABDA46029}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBBE7014-D607-47AD-9E64-45FABDA46029}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBBE7014-D607-47AD-9E64-45FABDA46029}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBBE7014-D607-47AD-9E64-45FABDA46029}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
