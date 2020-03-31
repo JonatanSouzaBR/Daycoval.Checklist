@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using Daycoval.Selenium.Framework.Parametros;
+using OpenQA.Selenium;
 using System;
 using System.IO;
 using System.Text;
@@ -10,7 +11,7 @@ namespace Daycoval.Selenium.Framework
         public static void SalvarImagemBotao(this IWebElement elemento, string nomeBotao)
         {
             var filePath = new StringBuilder();
-            filePath.AppendFormat("{0}/{1}.jpg", Parametros.DirImagens, nomeBotao);
+            filePath.AppendFormat("{0}/{1}.jpg", Sistema.DirImagens, nomeBotao);
 
             var imagemBase64 = elemento.GetAttribute("src");
 
