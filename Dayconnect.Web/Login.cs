@@ -1,4 +1,6 @@
+using Dayconnect.Cenarios.Web.Models.Base;
 using Daycoval.Selenium.Framework;
+using Daycoval.Selenium.Framework.Parametros;
 using NUnit.Framework;
 using Testes.Cenarios.Web;
 
@@ -11,27 +13,22 @@ namespace Testes
 
         public Login()
         {
+            _login.InicializarBrowser(EnumBrowser.FireFox);
             _login = new LoginCenario();
         }
 
         [Test]
         public void DeveExecutarLoginComSucesso()
         {
-            for (int i = 0; i < 1000000; i++)
-            {
-
-                _login.ExecutarNoFirefox(Parametros.Login, Parametros.Senha);
-
-                //Assert.AreEqual("https://ecode.daycoval.com.br/Home/Default", _login.Url);
-
-                _login.Dispose();
-            }
+            _login.ExecutarLogin(Sistema.Login, Sistema.Senha);
+            Assert.AreEqual(DayconnectUrl.Home, SeleniumProperties.Driver.Url);
+            _login.Dispose();
         }
 
         [Test]
         public void NaoDeveExecutarLoginComSenhaInvalida()
         {
-            _login.ExecutarNoFirefox(Parametros.Login, "12345678");
+            _login.ExecutarLogin(Sistema.Login, "00000000");
 
             _login.VerificarErro();
 

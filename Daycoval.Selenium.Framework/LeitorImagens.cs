@@ -1,27 +1,26 @@
-﻿using System.Collections.Generic;
+﻿using Daycoval.Selenium.Framework.Parametros;
+using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using Tesseract;
-using System.Linq;
 
 namespace Daycoval.Selenium.Framework
 {
     public class LeitorImagens
     {
         Dictionary<int, string> btnSenhaDicitionary = new Dictionary<int, string>();
-        private TesseractEngine engine;
+        private static TesseractEngine engine = new TesseractEngine(@"./tessdata", "por", EngineMode.Default);
 
-        public LeitorImagens()
-        {
-            engine = new TesseractEngine(@"./tessdata", "por", EngineMode.Default);
-        }
+        public LeitorImagens(){}
 
         public void lerImagensBotoesSenha()
         {
+            var ImagePath = new StringBuilder();
             for (int imageCount = 1; imageCount < 6; imageCount++)
             {
-                var ImagePath = new StringBuilder();
-                ImagePath.AppendFormat("{0}/",Parametros.DirImagens);
-                ImagePath.AppendFormat(Parametros.NomeAqruivoBotao, imageCount);
+                ImagePath.Clear();
+                ImagePath.AppendFormat("{0}/", Sistema.DirImagens);
+                ImagePath.AppendFormat(Sistema.NomeAqruivoBotao, imageCount);
 
                 using (var img = Pix.LoadFromFile(ImagePath.ToString()))
                 {
