@@ -28,7 +28,11 @@ namespace Dayconnect.Cenarios.Web.Models.Base
             _leitor.lerImagensBotoesSenha();
 
             var ordem = _leitor.retornarOrdemBotoesSenha(senha);
-            ordem.ForEach(x => ClicarBotoesSenha(x));
+            ordem.ForEach(x =>
+            {
+                wait.Until(ExpectedConditions.ElementToBeClickable(BotaoSenha1));
+                ClicarBotoesSenha(x);
+            });
         }
 
         private void SalvarImagensBotoes()

@@ -4,6 +4,7 @@ namespace Daycoval.Selenium.Framework.Parametros
 {
     public static class DayconnectUrl
     {
+
         public static string Login { get; } = "http://localhost:47396/";
         public static string Home { get => new StringBuilder().Append(Login).Append("Home/Default").ToString(); }
         public static string Sair { get => new StringBuilder().Append(Login).Append("Home/Sair").ToString(); }

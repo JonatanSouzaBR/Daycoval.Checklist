@@ -11,7 +11,7 @@ namespace Dayconnect
 
         public Investimento()
         {
-            _cenario = new InvestimentosCenario(EnumBrowser.FireFox);
+            _cenario = new InvestimentosCenario(EnumBrowser.Chrome);
         }
 
         [Test]

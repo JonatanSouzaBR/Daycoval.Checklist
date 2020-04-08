@@ -13,8 +13,8 @@ namespace Testes
 
         public Login()
         {
-            _login.InicializarBrowser(EnumBrowser.FireFox);
             _login = new LoginCenario();
+            _login.InicializarBrowser(EnumBrowser.Chrome);
         }
 
         [Test]
